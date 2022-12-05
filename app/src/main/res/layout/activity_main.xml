@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_height="72dp"
+            android:layout_width="72dp"
+            android:src="@drawable/ic_baseline_satellite_alt_24" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:text="Philipp Gureth" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="guph1012@h-ka.de" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Übung 234" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@color/teal_200"
+        android:text="kontaktieren" />
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:hint="Nachricht eingeben" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:background="@color/teal_200"
+        android:text="Nachricht senden" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sie haben folgende Nahricht gesendet:" />
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--TextView
+
+        android:id="@+id/textMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <EditText
+        android:id="@+id/edtUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL eingeben"
+        android:lines="4" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:background="@color/teal_200"
+        android:text="öffnen"
+        android:onClick="openUrl" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpenDepartures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abfahrtszeiten KVV"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@color/black"
+        android:onClick="openDepartures"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonKarte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Karte"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@color/teal_200"
+        android:onClick="buttonKarte"/>
+
+
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
